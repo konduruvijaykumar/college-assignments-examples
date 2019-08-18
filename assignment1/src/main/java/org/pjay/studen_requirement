@@ -1,0 +1,14 @@
+1. Student class has - name(String), age(int) - both members are protected variables -
+class is in package student
+
+2. StudentData class sub class of Student has - height(float), weight(float) -
+package studetails
+
+3. StudentDetails class sub class of StudentData has - gender(char) -
+contains method showData()  - package studetails
+
+4. define proper access specifiers for all variables and methods of classes
+
+5. use super to initialize base class members, all classes contains constructors to initialize members
+
+6. write TestStudent class to demonstrate the above scenario, import necessary packages. Explain the output details
