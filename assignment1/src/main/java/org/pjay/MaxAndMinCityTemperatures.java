@@ -7,7 +7,7 @@ public class MaxAndMinCityTemperatures {
 
     public static void main(String[] args) {
         // Let's take example of 5 days for now, with 10 cities
-        int lowCityIndex = -1, highCityIndex = -1, lowDayIndex = -1, highDayIndex = -1;
+        int lowTempCityIndex = -1, highTempCityIndex = -1, lowTempDayIndex = -1, highTempDayIndex = -1;
         double lowTemperature = Double.MAX_VALUE, hightTemperature = Double.MIN_VALUE;
         String[] cities = {"city1", "city2", "city3", "city4", "city5", "city6", "city7", "city8", "city9", "city10"};
         //System.out.println(cities.length);
@@ -29,20 +29,20 @@ public class MaxAndMinCityTemperatures {
                 //lowTemperature = Math.min(lowTemperature, temperatureArray[i][j]);
                 if (temperatureArray[i][j] < lowTemperature) {
                     lowTemperature = temperatureArray[i][j];
-                    lowDayIndex = i;
-                    lowCityIndex = j;
+                    lowTempDayIndex = i;
+                    lowTempCityIndex = j;
                 }
                 //hightTemperature = Math.max(hightTemperature, temperatureArray[i][j]);
                 if (temperatureArray[i][j] > hightTemperature) {
                     hightTemperature = temperatureArray[i][j];
-                    highDayIndex = i;
-                    highCityIndex = j;
+                    highTempDayIndex = i;
+                    highTempCityIndex = j;
                 }
             }
         }
 
-        System.out.println("Lowest temperature is on day :: " + (lowDayIndex + 1) + " for city :: " + cities[lowCityIndex] + " and temperature is :: " + lowTemperature);
-        System.out.println("Lowest temperature is on day :: " + (highDayIndex + 1) + " for city :: " + cities[highCityIndex] + " and temperature is :: " + hightTemperature);
+        System.out.println("Lowest temperature is on day :: " + (lowTempDayIndex + 1) + " for city :: " + cities[lowTempCityIndex] + " and temperature is :: " + lowTemperature);
+        System.out.println("Lowest temperature is on day :: " + (highTempDayIndex + 1) + " for city :: " + cities[highTempCityIndex] + " and temperature is :: " + hightTemperature);
 
     }
 
