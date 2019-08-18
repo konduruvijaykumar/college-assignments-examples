@@ -1,0 +1,12 @@
+1. Create class Library - bookNo(int), void getBookNo(int), void displayBookNo()
+as member variables, methods.
+
+2. Create class Book extends Library - String author, String title,
+void getInfo(String author, String title), void displayAuthorAndTitle() as member variables, methods.
+
+3. Create interface Branch - String subName = "JAVA", void displaySubName()
+as member variables, methods.
+
+4. Create class Issue extends Book and implements interface Branch.
+
+5. Write a Test class to the above work, explain the output of the program.
