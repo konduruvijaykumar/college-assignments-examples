@@ -1,0 +1,46 @@
+Write a program to implement Hangman game.
+
+Description:
+Hangman is a classic word-guessing game. The user should guess the word correctly by entering
+alphabets of the user choice. The Program will get input as single alphabet from the user and it will
+matchmaking with the alphabets in the original word. If the user given alphabet matches with the
+alphabet from the original word, then user must guess the remaining alphabets. Once the user
+successfully found the word he will be declared as winner otherwise user lose the game.
+
+
+Expected Output
+Welcome to the game Hangman!
+I am thinking of a word that is 5 letters long.
+
+-----------
+You have 8 guesses left.
+Available Letters: abcdefghijklmnopqrstuvwxyz
+Please guess a letter: a
+Good guess: a_ _ _ _
+
+-----------
+You have 8 guesses left.
+Available Letters: bcdefghijklmnopqrstuvwxyz
+Please guess a letter: p
+Good guess: app_ _
+
+-----------
+You have 8 guesses left.
+Available Letters: bcdefghijklmnoqrstuvwxyz
+Please guess a letter: p
+Oops! You've already guessed that letter: app_ _
+
+-----------
+You have 8 guesses left.
+Available Letters: bcdefghijklmnoqrstuvwxyz
+Please guess a letter: l
+Good guess: appl_
+
+-----------
+You have 8 guesses left.
+Available Letters: bcdefghijkmnoqrstuvwxyz
+Please guess a letter: e
+Good guess: apple
+
+-----------
+Congratulations, you won!
